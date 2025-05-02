@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #d90429;
+}
+
+.nav-link {
+    margin-left: 15px;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #d90429;
+}
+
+.banner-section {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-section .caption {
+  max-width: 600px;
+  color: white;
+}
+
+
+/* Hero section */
+.hero {
+    background: url('your-image.jpg') center center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #d90429;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Form Section */
+.form-section {
+    padding: 60px 0;
+}
+
+.form-section h2 {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+/* Advisor Section */
+.advisor-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .advisor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap; /* Responsive */
+  }
+  
+  .advisor-form {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .advisor-form h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .advisor-form p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 3px;
+    background-color: #e63946;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .advisor-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .advisor-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .advisor-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .advisor-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* Testimonials */
+.testimonials {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonials h4 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.blog-card img {
+    border-radius: 8px;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+.blog-card p {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 40px 0;
+}
+
+.footer h5, .footer h6 {
+    color: white;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d90429;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .form-overlay {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
