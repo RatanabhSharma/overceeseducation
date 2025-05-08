@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #dc3545 !important;
+  }
+  
+  .nav-link {
+    margin-right: 1rem;
+    color: #333 !important;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #dc3545 !important;
+  }
+  
+  /* Banner */
+  .banner-section {
+    height: auto;
+    position: relative;
+  }
+  
+  .banner-section img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .caption {
+    color: #fff;
+  }
+  
+  /* Booking Section */
+  .text-center h3 {
+    font-weight: bold;
+  }
+  
+  .text-center hr {
+    border-color: #dc3545;
+  }
+  
+  /* Services Grid */
+  .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .accordion-button {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #dc3545;
+    background-color: #f8f9fa;
+  }
+  
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer h5, .footer h6 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .footer ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer .text-center {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
