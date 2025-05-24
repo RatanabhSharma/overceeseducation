@@ -1,0 +1,346 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+}
+.nav-right {
+  gap: 1.2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #f3f7fa;
+  padding: 3rem 0 2rem 0;
+}
+.hero-grid {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1 1 320px;
+}
+.hero-text h1 {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.red-underline {
+  color: #e74c3c;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 2px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.hero-image {
+  flex: 1 1 320px;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Core Message Section */
+.core-message-section {
+  padding: 3rem 0 2rem 0;
+}
+.core-message-grid {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.core-collage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.collage-row {
+  display: flex;
+  gap: 0.7rem;
+}
+.core-collage img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+.core-message-text {
+  flex: 1 1 350px;
+}
+.core-message-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.core-message-text p {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+.cta-link {
+  color: #e74c3c;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+  font-size: 1.08rem;
+}
+.cta-link:hover {
+  color: #b93222;
+  text-decoration: underline;
+}
+.arrow {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Features Section */
+.features-section {
+  background: #f8f8fa;
+  padding: 3rem 0 2rem 0;
+}
+.features-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2.2rem;
+}
+.features-title .red-underline {
+  color: #e74c3c;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 2px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.feature-block {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+}
+.feature-block h3 {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.feature-block p {
+  color: #666;
+  font-size: 1.02rem;
+}
+
+/* Team Section */
+.team-section {
+  padding: 3rem 0 2rem 0;
+}
+.team-grid {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.team-text {
+  flex: 1 1 350px;
+}
+.team-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.team-text p {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+.team-image {
+  flex: 1 1 350px;
+  text-align: center;
+}
+.team-image img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 3rem 0 1.5rem 0;
+  margin-top: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #e74c3c;
+}
+.footer-desc {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.footer-social a {
+  color: #fff;
+  background: #e74c3c;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.footer-social a:hover {
+  background: #b93222;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin-bottom: 0.7rem;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+.footer-bottom {
+  border-top: 1px solid #23272f;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.98rem;
+  color: #bbb;
+}
+.footer-bottom a {
+  color: #bbb;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-bottom a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .core-message-grid, .team-grid, .hero-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .core-collage {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .core-collage img {
+    width: 70px;
+    height: 70px;
+  }
+  .hero-image img, .team-image img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .features-title, .core-message-text h2, .team-text h2, .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .footer-title {
+    font-size: 1rem;
+  }
+} 

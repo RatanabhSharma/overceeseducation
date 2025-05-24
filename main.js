@@ -133,4 +133,169 @@ document.addEventListener('DOMContentLoaded', function() {
     cards.forEach(card => {
         observer.observe(card);
     });
+});
+
+// Mobile Navigation Toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+});
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+            // Close mobile menu after clicking a link
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
+// FAQ Accordion
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        // Toggle answer visibility
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+        } else {
+            answer.style.display = 'block';
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+        }
+    });
+});
+
+// Form Submissions
+const assessmentForm = document.getElementById('assessmentForm');
+const contactForm = document.getElementById('contactForm');
+
+if (assessmentForm) {
+    assessmentForm.addEventListener('submit', handleAssessmentSubmit);
+}
+
+if (contactForm) {
+    contactForm.addEventListener('submit', handleContactSubmit);
+}
+
+function handleAssessmentSubmit(e) {
+    e.preventDefault();
+    // Get form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Here you would typically send the data to your server
+    console.log('Assessment Form Data:', data);
+    
+    // Show success message
+    alert('Thank you for submitting your assessment form. We will contact you shortly!');
+    e.target.reset();
+}
+
+function handleContactSubmit(e) {
+    e.preventDefault();
+    // Get form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Here you would typically send the data to your server
+    console.log('Contact Form Data:', data);
+    
+    // Show success message
+    alert('Thank you for your message. We will get back to you soon!');
+    e.target.reset();
+}
+
+// Live Chat Button
+const chatButton = document.getElementById('liveChatButton');
+
+if (chatButton) {
+    chatButton.addEventListener('click', () => {
+        // Here you would typically initialize your chat widget
+        alert('Live chat feature coming soon!');
+    });
+}
+
+// Testimonials Slider
+const testimonials = [
+    {
+        text: "Overseas Education helped me achieve my dream of studying in Australia. Their guidance was invaluable!",
+        author: "Emily Wang"
+    },
+    {
+        text: "The team made my application process smooth and stress-free. Highly recommended!",
+        author: "James Smith"
+    },
+    {
+        text: "Professional service with personal attention. They helped me choose the perfect course.",
+        author: "Maria Garcia"
+    }
+];
+
+let currentTestimonialIndex = 0;
+const testimonialContainer = document.querySelector('.testimonial');
+
+function updateTestimonial() {
+    if (testimonialContainer) {
+        const testimonial = testimonials[currentTestimonialIndex];
+        testimonialContainer.innerHTML = `
+            <p>"${testimonial.text}"</p>
+            <h4>- ${testimonial.author}</h4>
+        `;
+    }
+}
+
+// Change testimonial every 5 seconds
+setInterval(() => {
+    currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+    updateTestimonial();
+}, 5000);
+
+// Initialize first testimonial
+updateTestimonial();
+
+// Sticky Header
+const header = document.querySelector('.header');
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if (lastScrollY < window.scrollY) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+    lastScrollY = window.scrollY;
+});
+
+// Social Media Links
+const socialLinks = document.querySelectorAll('.social-links a');
+
+socialLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href === '#') {
+            e.preventDefault();
+            alert('Social media link coming soon!');
+        }
+    });
 }); 
