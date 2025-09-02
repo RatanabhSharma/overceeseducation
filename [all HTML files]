@@ -117,7 +117,7 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -130,7 +130,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="study-abroad.html">Study Abroad</a></li>
+          <li class="nav-item"><a class="nav-link" href="study-abroad.html">Study Abroad</a></li>
           <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="why-overcees.html">Why Overcees Education</a></li>
           <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs & News</a></li>
@@ -289,21 +289,21 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer bg-dark text-white pt-5 pb-3">
+  <footer class="footer">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="section-title mb-3">Overcees Education</div>
-          <p class="text-muted">Immigration & Education Services</p>
-          <div class="social-links mt-3">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Overcees Education</div>
+          <p class="footer-desc">Immigration & Education Services</p>
+          <div class="footer-social">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="section-title mb-3">Study Abroad</div>
+        <div>
+          <div class="footer-title">Study Abroad</div>
           <ul class="footer-links">
             <li><a href="#">How to choose your destination</a></li>
             <li><a href="#">QS World University Rankings</a></li>
@@ -313,8 +313,8 @@
             <li><a href="#">Overcees Education Events</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <div class="section-title mb-3">Useful Links</div>
+        <div>
+          <div class="footer-title">Useful Links</div>
           <ul class="footer-links">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Courses</a></li>
@@ -323,8 +323,8 @@
             <li><a href="#">Ask Overcees Education</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <div class="section-title mb-3">IELTS</div>
+        <div>
+          <div class="footer-title">IELTS</div>
           <ul class="footer-links">
             <li><a href="#">What is IELTS?</a></li>
             <li><a href="#">Test dates</a></li>
@@ -334,7 +334,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom mt-4 text-center">
+      <div class="footer-bottom">
         <a href="#">Disclaimer</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
@@ -342,7 +342,7 @@
       </div>
     </div>
   </footer>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

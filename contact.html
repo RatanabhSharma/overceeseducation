@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,91 +6,147 @@
   <title>Contact Us | Overcees Education</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="contact-style.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="pics/OverCEESEDUCATION.jpg" alt="Overcees Education Logo" class="logo-img">
+        <span class="text-danger fw-bold fs-4">Overcees Education</span>
       </a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="study-abroad.html">Study Abroad</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="why-overcees.html">Why Overcees Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="essential.html">Essential Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">COntact Us</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold">
+          <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="study-abroad.html">Study Abroad</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="why-overcees.html">Why Overcees Education</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="blogs.html">Blogs & News</a></li>
+          <li class="nav-item"><a class="nav-link active fs-5" href="contact.html">Contact Us</a></li>
         </ul>
-      <ul class="nav-links nav-right">
-        <li><a href="#"><i class="fa-regular fa-newspaper"></i> News & Updates</a></li>
-        <li><a href="#"><i class="fa-regular fa-envelope"></i> Contact Us</a></li>
-      </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Contact Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur, nisi elit.</p>
-      </div>
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80" alt="Business representative with headset">
+  <section class="contact-hero py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 mb-4">Get in Touch</h1>
+          <p class="lead mb-4">Have questions about studying abroad? Our expert counselors are here to help you 24/7.</p>
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-phone-alt text-danger me-3 fs-4"></i>
+              <div>
+                <p class="mb-0 text-muted">Call us at</p>
+                <a href="tel:+911752200123" class="h4 text-dark text-decoration-none">+91 175-2200123</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope text-danger me-3 fs-4"></i>
+              <div>
+                <p class="mb-0 text-muted">Email us at</p>
+                <a href="mailto:info.overceeseducation@gmail.com?subject=Inquiry%20about%20Study%20Abroad&body=Hi%20Overcees%20Education%2C%0D%0A%0D%0AI%20am%20interested%20in%20studying%20abroad%20and%20would%20like%20to%20know%20more%20about%3A%0D%0A%0D%0A-%20Preferred%20Country%3A%0D%0A-%20Course%20Level%3A%0D%0A-%20Field%20of%20Study%3A%0D%0A-%20Planned%20Start%20Date%3A%0D%0A%0D%0APlease%20help%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you%2C%0D%0A[Your%20Name]" 
+                   class="h4 text-dark text-decoration-none">info.overceeseducation@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="social-links mt-4">
+            <a href="#" class="btn btn-light me-2"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="btn btn-light me-2"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="btn btn-light"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-4">Send us a Message</h4>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" class="form-control" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Subject</label>
+                    <select class="form-select">
+                      <option>Study Abroad Inquiry</option>
+                      <option>Visa Assistance</option>
+                      <option>Course Information</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Get in Touch Section -->
-  <section class="get-in-touch-section">
-    <div class="container text-center">
-      <h2 class="main-title">Get In Touch With Us</h2>
-      <p class="subtitle">Please leave a message if you have any question or experiencing any difficulty using our webs.<span class="red-underline">Our team</span> will get back to you shortly.</p>
-    </div>
-  </section>
-
-  <!-- Contact Area -->
-  <section class="contact-area-section">
-    <div class="container contact-area-grid">
-      <div class="contact-form-area">
-        <form class="contact-form">
-          <div class="form-row">
-            <input type="text" placeholder="First Name *" required>
-            <input type="text" placeholder="Last Name *" required>
+  <!-- Office Location Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Visit Our Office</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h5 class="card-title">Patiala Office</h5>
+              <p class="card-text text-muted mb-3">
+                Near Arya Samaj Chowk<br>
+                Patiala, Punjab 147001<br>
+                India
+              </p>
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-clock text-danger me-2"></i>
+                <span>Mon - Sat: 10:00 AM - 6:00 PM</span>
+              </div>
+              <a href="https://maps.google.com/?q=Arya+Samaj+Chowk+Patiala" class="btn btn-outline-danger" target="_blank">
+                Get Directions <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
           </div>
-          <div class="form-row">
-            <input type="email" placeholder="Email Address *" required>
-            <input type="tel" placeholder="Mobile Number *" required>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.7613806362644!2d76.39024!3d30.339861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028ab00000001%3A0x0!2sArya+Samaj+Chowk%2C+Patiala%2C+Punjab+147001!5e0!3m2!1sen!2sin!4v1624926234567!5m2!1sen!2sin"
+              style="border:0; width:100%; height:100%; min-height:300px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
-          <div class="form-row">
-            <input type="text" placeholder="Study Destination">
-            <input type="text" placeholder="When Do You Plan To Study?">
-          </div>
-          <div class="form-row">
-            <input type="text" placeholder="Mode of Counselling">
-            <input type="text" placeholder="Fund Your Education?">
-          </div>
-          <div class="form-row">
-            <button type="submit" class="submit-btn">BOOK YOUR SLOT</button>
-          </div>
-        </form>
-      </div>
-      <div class="contact-info-box">
-        <h3>Contact Details</h3>
-        <ul class="contact-info-list">
-          <li><i class="fa-solid fa-phone"></i> +91 9999999999</li>
-          <li><i class="fa-solid fa-envelope"></i> hello@Overcees Education.com</li>
-          <li><i class="fa-solid fa-location-dot"></i> SCO – 252/545 Mohali, Chandigarh, 160022</li>
-        </ul>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Google Map Section -->
-  <section class="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.073282371322!2d76.7221093151326!3d30.70464898164806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedc7e2b2e2e1%3A0x6e7b7e7b7e7b7e7b!2sMohali%2C%20Punjab!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
   <!-- Footer -->
@@ -147,5 +203,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- Add Bootstrap JS before closing body tag -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Update the contact form section to include form submission -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = {
+        firstName: this.querySelector('input[type="text"]').value,
+        lastName: this.querySelectorAll('input[type="text"]')[1].value,
+        email: this.querySelector('input[type="email"]').value,
+        phone: this.querySelector('input[type="tel"]').value,
+        subject: this.querySelector('select').value,
+        message: this.querySelector('textarea').value
+      };
+
+      // Send email using mailto
+      const mailtoLink = `mailto:info.overceeseducation@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+      `)}`;
+
+      window.location.href = mailtoLink;
+
+      // Clear form
+      this.reset();
+      alert('Thank you for your message. We will get back to you soon!');
+    });
+  </script>
 </body>
-</html> 
+</html>
